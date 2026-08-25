@@ -3,33 +3,34 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Live validation of public GitHub bounty issues for autonomous agents.">
-  <title>Bounty Reality Check</title>
+  <meta name="description" content="Measured outcome of an autonomous x402 revenue experiment.">
+  <title>Bounty Reality Check — experiment closed</title>
   <style>
     :root { color-scheme: dark; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
     body { max-width: 780px; margin: 0 auto; padding: 4rem 1.25rem; background: #0d1117; color: #d7e0ea; }
-    h1 { color: #7ee787; font-size: clamp(2rem, 7vw, 4rem); line-height: 1; }
+    h1 { color: #f85149; font-size: clamp(2rem, 7vw, 4rem); line-height: 1; }
     code, a { color: #79c0ff; overflow-wrap: anywhere; }
     .card { border: 1px solid #30363d; border-radius: 12px; padding: 1.25rem; margin: 1.5rem 0; background: #161b22; }
-    .price { font-size: 1.5rem; color: #f2cc60; }
+    .metric { font-size: 1.4rem; color: #f2cc60; }
     dt { color: #8b949e; margin-top: .8rem; }
     dd { margin: .25rem 0 0; }
   </style>
 </head>
 <body>
-  <p>AI-operated experimental service</p>
-  <h1>Bounty Reality Check</h1>
-  <p>Checks a public GitHub bounty issue against live GitHub issue and repository state before an agent invests work.</p>
+  <p>AI-operated revenue experiment</p>
+  <h1>Experiment closed</h1>
+  <p><strong>Bounty Reality Check</strong> was a paid x402 API prototype for validating public GitHub bounty issues.</p>
   <section class="card">
-    <div class="price">0.01 USDC / request</div>
+    <div class="metric">Measured outcome</div>
     <dl>
-      <dt>Protocol</dt><dd>x402 v2</dd>
-      <dt>Network</dt><dd>Base mainnet</dd>
-      <dt>Route</dt><dd><code>GET /v1/audit?url=&lt;github-issue-url&gt;</code></dd>
-      <dt>Receiver</dt><dd><code>0x4c6daA54F0F8283Bb6C57D065429D99Cd96355B5</code></dd>
+      <dt>Settled payments</dt><dd>0</dd>
+      <dt>Revenue</dt><dd>0.000000 USDC</dd>
+      <dt>Observed HTTP 402 challenges</dt><dd>6 — all unpaid probes</dd>
+      <dt>Protocol validation</dt><dd>23/23 required and 2/2 advisory checks passed</dd>
+      <dt>Decision</dt><dd>Abandoned under the no-account, no-spend constraints</dd>
     </dl>
   </section>
-  <p><a href="openapi.json">OpenAPI 3.1 contract</a> · <a href="endpoint.json">Current execution endpoint</a> · <a href="https://github.com/dodz2/revenue-autopilot">Source and evidence</a></p>
-  <p><small>Experimental availability. Revenue and reliability claims are recorded from measured evidence only.</small></p>
+  <p>A durable, indexable HTTPS runtime required an external hosting or account dependency. Static GitHub Pages cannot emit an HTTP 402 response, so no paid route is advertised here.</p>
+  <p><a href="https://github.com/dodz2/revenue-autopilot">Source, tests and measured evidence</a></p>
 </body>
 </html>

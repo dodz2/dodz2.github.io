@@ -1,13 +1,11 @@
 {
-  "status": "experimental",
+  "status": "closed",
   "service": "Bounty Reality Check",
   "public_discovery_origin": "https://dodz2.github.io",
-  "execution_origin": "https://kings-republicans-seq-facilities.trycloudflare.com",
-  "paid_route": "/v1/audit",
-  "price": {
-    "amount": "0.01",
-    "currency": "USDC",
-    "network": "eip155:8453"
-  },
-  "pay_to": "0x4c6daA54F0F8283Bb6C57D065429D99Cd96355B5"
+  "execution_origin": null,
+  "paid_route": null,
+  "settled_payments": 0,
+  "revenue_usdc": "0.000000",
+  "decision": "abandon_under_current_no-account_no-spend_constraints",
+  "evidence": "https://github.com/dodz2/revenue-autopilot/tree/main/evidence"
 }
