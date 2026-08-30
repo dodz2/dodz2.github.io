@@ -76,6 +76,28 @@
         background: #9fe8ff;
         color: #03050a;
       }
+      #tool-bar {
+        position: fixed;
+        top: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 6px;
+        pointer-events: none;
+      }
+      #tool-bar button {
+        pointer-events: auto;
+        font: 12px/1 monospace;
+        color: #9fe8ff;
+        background: rgba(3, 5, 10, 0.82);
+        border: 1px solid #9fe8ff;
+        padding: 6px 10px;
+        cursor: pointer;
+      }
+      #tool-bar button.active {
+        background: #9fe8ff;
+        color: #03050a;
+      }
       #tooltip {
         position: fixed;
         left: 0;
@@ -89,12 +111,18 @@
         white-space: nowrap;
       }
     </style>
-    <script type="module" crossorigin src="/demiurge/assets/index-DubaKbnx.js"></script>
+    <script type="module" crossorigin src="/demiurge/assets/index-BrC7Ja2o.js"></script>
   </head>
   <body>
     <canvas id="scene"></canvas>
     <div id="hud"></div>
     <aside id="info-panel"><p class="empty">Aucune sélection</p></aside>
+    <div id="tool-bar">
+      <button type="button" data-preset="navigate">Nav</button>
+      <button type="button" data-preset="star">Etoile</button>
+      <button type="button" data-preset="planet">Planete</button>
+      <button type="button" data-preset="asteroid">Asteroide</button>
+    </div>
     <div id="time-bar">
       <button type="button" data-scale="0">Pause</button>
       <button type="button" data-scale="1">×1</button>
