@@ -110,13 +110,67 @@
         pointer-events: none;
         white-space: nowrap;
       }
+      #edit-panel {
+        position: fixed;
+        bottom: 12px;
+        right: 10px;
+        width: 240px;
+        color: #9fe8ff;
+        font: 12px/1.45 monospace;
+        background: rgba(3, 5, 10, 0.82);
+        border: 1px solid #1c4a58;
+        padding: 8px 10px;
+        pointer-events: auto;
+      }
+      #edit-panel[hidden] {
+        display: none;
+      }
+      #edit-panel dl {
+        margin: 0;
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 4px 8px;
+        align-items: center;
+      }
+      #edit-panel dt {
+        opacity: 0.65;
+      }
+      #edit-panel dd {
+        margin: 0;
+        text-align: right;
+      }
+      #edit-panel input[type='range'],
+      #edit-panel select {
+        grid-column: 1 / -1;
+        width: 100%;
+        box-sizing: border-box;
+        pointer-events: auto;
+      }
+      #edit-panel .edit-actions {
+        margin-top: 8px;
+        text-align: right;
+      }
+      #edit-panel button {
+        font: 12px/1 monospace;
+        color: #9fe8ff;
+        background: rgba(3, 5, 10, 0.82);
+        border: 1px solid #9fe8ff;
+        padding: 5px 10px;
+        cursor: pointer;
+        pointer-events: auto;
+      }
+      #edit-panel button:hover {
+        background: #9fe8ff;
+        color: #03050a;
+      }
     </style>
-    <script type="module" crossorigin src="/demiurge/assets/index-BrC7Ja2o.js"></script>
+    <script type="module" crossorigin src="/demiurge/assets/index-CtXlJjT0.js"></script>
   </head>
   <body>
     <canvas id="scene"></canvas>
     <div id="hud"></div>
     <aside id="info-panel"><p class="empty">Aucune sélection</p></aside>
+    <div id="edit-panel" hidden></div>
     <div id="tool-bar">
       <button type="button" data-preset="navigate">Nav</button>
       <button type="button" data-preset="star">Etoile</button>
